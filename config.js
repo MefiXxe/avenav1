@@ -1,0 +1,92 @@
+window.SITE_CONFIG = {
+  "version": 4,
+  "brand": "Quinoa Crunch",
+  "logo": "",
+  "accent": "#ae8751",
+  "navy": "#173b50",
+  "paper": "#f6f0e5",
+  "motion": "on",
+  "kicker": "BARRITAS DE CEREAL",
+  "claimMain": "0%",
+  "claimLabel": "azúcar\nañadido",
+  "collectionImage": "assets/coleccion.webp",
+  "whatsapp": "",
+  "whatsappMessage": "¡Hola! Quiero conocer los sabores y la disponibilidad de Quinoa Crunch.",
+  "contactTitle": "¿Cuál quieres\nprobar?",
+  "contactDescription": "Consulta por nuestros sabores, presentaciones y disponibilidad. Te atendemos por WhatsApp.",
+  "contactButton": "Escríbenos por WhatsApp",
+  "contactMicro": "",
+  "aboutTitle": "Conoce Quinoa Crunch.",
+  "aboutDescription": "Somos una propuesta de barritas de cereal con tres sabores: quinua tradicional, chocolate y avena. Queremos ofrecer una opción práctica para acompañarte en tus actividades de cada día.",
+  "footerTagline": "Barritas de cereal.",
+  "location": "Chiclayo, Perú",
+  "demoNote": "Proyecto académico",
+  "products": [
+    {
+      "id": "tradicional",
+      "name": "Quinua tradicional",
+      "label": "EL SABOR ORIGINAL",
+      "headline": "Quinua\ntradicional.",
+      "description": "Quinua en una barrita de textura crocante. Nuestro sabor original, para disfrutar en cualquier momento.",
+      "image": "assets/tradicional.webp",
+      "photo": "assets/tradicional-foto.webp",
+      "color": "#e6eee5",
+      "ink": "#153c3b",
+      "tags": [
+        "Quinua",
+        "Sabor tradicional"
+      ],
+      "detail": "Conoce nuestra barrita de quinua tradicional. Escríbenos para consultar la presentación, los ingredientes completos, alérgenos, precio y disponibilidad.",
+      "price": "",
+      "visible": true,
+      "imageScale": 100,
+      "accent": "#997444",
+      "icon": "quinoa"
+    },
+    {
+      "id": "chocolate",
+      "name": "Chocolate",
+      "label": "CON UN TOQUE DE CACAO",
+      "headline": "Chocolate.\nY crunch.",
+      "description": "El sabor del chocolate se encuentra con una textura crocante. Una forma diferente de disfrutar tu barrita de cereal.",
+      "image": "assets/chocolate.webp",
+      "photo": "assets/chocolate-foto.webp",
+      "color": "#3d2b22",
+      "ink": "#fff2df",
+      "tags": [
+        "Chocolate",
+        "Textura crocante"
+      ],
+      "detail": "Conoce nuestra barrita sabor chocolate. Escríbenos para consultar la presentación, los ingredientes completos, alérgenos, precio y disponibilidad.",
+      "price": "",
+      "visible": true,
+      "imageScale": 119,
+      "accent": "#deb880",
+      "icon": "chocolate"
+    },
+    {
+      "id": "avena",
+      "name": "Avena",
+      "label": "UN SABOR PARA CADA DÍA",
+      "headline": "Avena.\nAsí de simple.",
+      "description": "Una barrita de cereal con avena y una textura que se disfruta en cada bocado. Elige tu favorita y llévala contigo.",
+      "image": "assets/avena.webp",
+      "photo": "assets/avena-foto.webp",
+      "color": "#efdab2",
+      "ink": "#283c40",
+      "tags": [
+        "Avena",
+        "Cereal"
+      ],
+      "detail": "Conoce nuestra barrita sabor avena. Escríbenos para consultar la presentación, los ingredientes completos, alérgenos, precio y disponibilidad.",
+      "price": "",
+      "visible": true,
+      "imageScale": 125,
+      "accent": "#936329",
+      "icon": "oats"
+    }
+  ],
+  "autoplay": "on",
+  "autoplaySeconds": 6,
+  "collectionLabel": "SABORES"
+};
