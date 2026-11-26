@@ -1,3 +1,4 @@
+/* Editado en el configurador de Quinoa Crunch. */
 window.SITE_CONFIG = {
   "version": 4,
   "brand": "Quinoa Crunch",
@@ -10,7 +11,7 @@ window.SITE_CONFIG = {
   "claimMain": "0%",
   "claimLabel": "azúcar\nañadido",
   "collectionImage": "assets/coleccion.webp",
-  "whatsapp": "",
+  "whatsapp": "988896049",
   "whatsappMessage": "¡Hola! Quiero conocer los sabores y la disponibilidad de Quinoa Crunch.",
   "contactTitle": "¿Cuál quieres\nprobar?",
   "contactDescription": "Consulta por nuestros sabores, presentaciones y disponibilidad. Te atendemos por WhatsApp.",
@@ -32,6 +33,8 @@ window.SITE_CONFIG = {
       "photo": "assets/tradicional-foto.webp",
       "color": "#e6eee5",
       "ink": "#153c3b",
+      "accent": "#997444",
+      "icon": "quinoa",
       "tags": [
         "Quinua",
         "Sabor tradicional"
@@ -39,9 +42,7 @@ window.SITE_CONFIG = {
       "detail": "Conoce nuestra barrita de quinua tradicional. Escríbenos para consultar la presentación, los ingredientes completos, alérgenos, precio y disponibilidad.",
       "price": "",
       "visible": true,
-      "imageScale": 100,
-      "accent": "#997444",
-      "icon": "quinoa"
+      "imageScale": 100
     },
     {
       "id": "chocolate",
@@ -53,6 +54,8 @@ window.SITE_CONFIG = {
       "photo": "assets/chocolate-foto.webp",
       "color": "#3d2b22",
       "ink": "#fff2df",
+      "accent": "#deb880",
+      "icon": "chocolate",
       "tags": [
         "Chocolate",
         "Textura crocante"
@@ -60,9 +63,7 @@ window.SITE_CONFIG = {
       "detail": "Conoce nuestra barrita sabor chocolate. Escríbenos para consultar la presentación, los ingredientes completos, alérgenos, precio y disponibilidad.",
       "price": "",
       "visible": true,
-      "imageScale": 119,
-      "accent": "#deb880",
-      "icon": "chocolate"
+      "imageScale": 119
     },
     {
       "id": "avena",
@@ -74,6 +75,8 @@ window.SITE_CONFIG = {
       "photo": "assets/avena-foto.webp",
       "color": "#efdab2",
       "ink": "#283c40",
+      "accent": "#936329",
+      "icon": "oats",
       "tags": [
         "Avena",
         "Cereal"
@@ -81,9 +84,7 @@ window.SITE_CONFIG = {
       "detail": "Conoce nuestra barrita sabor avena. Escríbenos para consultar la presentación, los ingredientes completos, alérgenos, precio y disponibilidad.",
       "price": "",
       "visible": true,
-      "imageScale": 125,
-      "accent": "#936329",
-      "icon": "oats"
+      "imageScale": 125
     }
   ],
   "autoplay": "on",
