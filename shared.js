@@ -3,6 +3,8 @@
   const draftKey = 'quinoa-crunch-draft-v3';
   const clone = value => JSON.parse(JSON.stringify(value));
   const text = value => String(value ?? '');
+  // Conserva los datos existentes y corrige la escritura anterior de la marca.
+  const quinuaText = value => text(value).replace(/\bquinoa\b/gi, word => word === word.toUpperCase() ? 'QUINUA' : word[0] === 'Q' ? 'Quinua' : 'quinua');
   const escape = value => text(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const color = (value, fallback='#ae8751') => /^#[0-9a-f]{6}$/i.test(value) ? value : fallback;
   const image = value => {
@@ -34,11 +36,16 @@
         imageScale:Math.min(140,Math.max(60,Number(p.imageScale)||100))
       }));
     }
+    for (const key of ['brand','kicker','whatsappMessage','contactTitle','contactDescription','contactButton','contactMicro','aboutTitle','aboutDescription','footerTagline','collectionLabel']) base[key]=quinuaText(base[key]);
+    for (const product of base.products) {
+      for (const key of ['name','label','headline','description','detail']) product[key]=quinuaText(product[key]);
+      product.tags=product.tags.map(quinuaText);
+    }
     return base;
   }
   function readDraft(){try {const r=localStorage.getItem(draftKey);return r?normalize(JSON.parse(r)):null;}catch{return null;}}
   function writeDraft(c){localStorage.setItem(draftKey,JSON.stringify(c));}
-  function configSource(config){return '/* Editado en el configurador de Quinoa Crunch. */\nwindow.SITE_CONFIG = '+JSON.stringify(config,null,2).replace(/</g,'\\u003c')+';\n';}
+  function configSource(config){return '/* Editado en el configurador de Quinua Crunch. */\nwindow.SITE_CONFIG = '+JSON.stringify(config,null,2).replace(/</g,'\\u003c')+';\n';}
   function download(blob,name){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
   function whatsappURL(config,product){const phone=text(config.whatsapp).replace(/\D/g,'');if(!/^[1-9]\d{7,14}$/.test(phone))return '';const message=product?`¡Hola! Me interesa ${product.name} de ${config.brand}. Quisiera conocer su precio y disponibilidad.`:config.whatsappMessage;return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;}
   function renderIcons(root=document.body){

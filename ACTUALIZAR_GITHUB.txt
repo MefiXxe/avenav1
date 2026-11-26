@@ -1,0 +1,25 @@
+ACTUALIZACIÓN DEL NOMBRE A QUINUA CRUNCH
+
+Este paquete actualiza la versión 4 de la web que recibiste anteriormente.
+
+1. Extrae este ZIP.
+2. Abre tu repositorio de la web en GitHub (por ejemplo, MefiXxe/avena1).
+3. En la carpeta principal, elige Add file > Upload files.
+4. Arrastra todos los archivos extraídos. Deben quedar en la raíz, junto al
+   config.js que ya tiene tu repositorio. No subas el ZIP cerrado ni la carpeta
+   que lo contiene.
+5. Confirma con Commit changes. Puedes escribir: Corrige nombre a Quinua Crunch.
+6. Espera a que finalice el despliegue automático de Cloudflare y recarga tu web
+   con Ctrl + F5.
+
+El paquete conserva tu config.js y tus imágenes. La web y el panel reconocen la
+escritura anterior y muestran Quinua Crunch sin borrar WhatsApp, colores,
+productos ni borradores guardados en el navegador.
+
+Para guardar también el nombre corregido dentro de config.js:
+abre TU-ENLACE/admin.html, comprueba el nombre en Marca y portada, descarga
+config.js y súbelo a la raíz del mismo repositorio. El panel exportará la
+configuración completa con tus datos y el nombre corregido.
+
+Este ZIP es una actualización. Necesita que la web anterior ya exista en el
+repositorio. No cambia el nombre del repositorio ni la dirección de tu web.

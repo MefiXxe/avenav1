@@ -1,4 +1,8 @@
-# Quinoa Crunch
+# Actualización del nombre a Quinua Crunch
+
+Lee ACTUALIZAR_GITHUB.txt para actualizar el repositorio existente. Esta actualización conserva config.js, las imágenes y los datos personalizados.
+
+# Quinua Crunch
 
 Web de barritas de cereal con portada de sabores, iconos, paleta por producto, reproducción automática y configurador aparte.
 
